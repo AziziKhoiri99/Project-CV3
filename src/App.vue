@@ -1,28 +1,32 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <div class="cv">
+      <cv />
+    </div>
+    <div class="cv-dua">
+      <cv-dua />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Cv from "./components/Cv.vue";
+import CvDua from "./components/CvDua.vue";
 
 export default {
-  name: 'App',
+  name: "app",
   components: {
-    HelloWorld
-  }
-}
+    Cv,
+    CvDua,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<style scoped>
+h2 {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: "Oswald", sans-serif;
+  background-color: lightblue;
+  padding: 10px;
 }
 </style>
